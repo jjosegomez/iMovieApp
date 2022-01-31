@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7245FE892D2B9F08B3BCA7CC /* Pods_iMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB987568BE7551A4FAC532D /* Pods_iMovieTests.framework */; };
+		9F7CBD003C5D145AB94E4E97 /* Pods_iMovie_iMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D778EBF0E377ABD06D22CF8 /* Pods_iMovie_iMovieUITests.framework */; };
+		AEE5738DC4B1838F25B1F6A4 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BE130C04CCE201ECFA8AF /* Pods_iMovie.framework */; };
+		E9F0D66327A8449B0095EF6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66227A8449B0095EF6A /* AppDelegate.swift */; };
+		E9F0D66527A8449B0095EF6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */; };
+		E9F0D66727A8449B0095EF6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66627A8449B0095EF6A /* ViewController.swift */; };
+		E9F0D66A27A8449B0095EF6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F0D66827A8449B0095EF6A /* Main.storyboard */; };
+		E9F0D66C27A8449D0095EF6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9F0D66B27A8449D0095EF6A /* Assets.xcassets */; };
+		E9F0D66F27A8449D0095EF6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9F0D66D27A8449D0095EF6A /* LaunchScreen.storyboard */; };
+		E9F0D67A27A8449E0095EF6A /* iMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D67927A8449E0095EF6A /* iMovieTests.swift */; };
+		E9F0D68427A8449E0095EF6A /* iMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D68327A8449E0095EF6A /* iMovieUITests.swift */; };
+		E9F0D68627A8449E0095EF6A /* iMovieUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D68527A8449E0095EF6A /* iMovieUITestsLaunchTests.swift */; };
+		E9F0D69327A857200095EF6A /* movieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D69227A857200095EF6A /* movieTableViewCell.swift */; };
+		E9F0D69627A85E580095EF6A /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = E9F0D69527A85E580095EF6A /* AlamofireImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E9F0D67627A8449E0095EF6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9F0D65727A8449B0095EF6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F0D65E27A8449B0095EF6A;
+			remoteInfo = iMovie;
+		};
+		E9F0D68027A8449E0095EF6A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9F0D65727A8449B0095EF6A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9F0D65E27A8449B0095EF6A;
+			remoteInfo = iMovie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		190B2B53841485E2D2B5C1D4 /* Pods-iMovie-iMovieUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie-iMovieUITests.release.xcconfig"; path = "Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests.release.xcconfig"; sourceTree = "<group>"; };
+		25C86C4175A9C1628E407516 /* Pods-iMovieTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovieTests.release.xcconfig"; path = "Target Support Files/Pods-iMovieTests/Pods-iMovieTests.release.xcconfig"; sourceTree = "<group>"; };
+		2C73C906B33C2246E532F109 /* Pods-iMovie-iMovieUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie-iMovieUITests.debug.xcconfig"; path = "Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D60D0E17157E7969A9741BF /* Pods-iMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.release.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.release.xcconfig"; sourceTree = "<group>"; };
+		6A3833D4C91189CEFF4F761E /* Pods-iMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovie.debug.xcconfig"; path = "Target Support Files/Pods-iMovie/Pods-iMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		8D778EBF0E377ABD06D22CF8 /* Pods_iMovie_iMovieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie_iMovieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29BE130C04CCE201ECFA8AF /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD4FC157BAB52FB652A550BA /* Pods-iMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-iMovieTests/Pods-iMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9F0D65F27A8449B0095EF6A /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F0D66227A8449B0095EF6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E9F0D66627A8449B0095EF6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9F0D66927A8449B0095EF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9F0D66B27A8449D0095EF6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9F0D66E27A8449D0095EF6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E9F0D67027A8449D0095EF6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9F0D67527A8449E0095EF6A /* iMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F0D67927A8449E0095EF6A /* iMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieTests.swift; sourceTree = "<group>"; };
+		E9F0D67F27A8449E0095EF6A /* iMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9F0D68327A8449E0095EF6A /* iMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieUITests.swift; sourceTree = "<group>"; };
+		E9F0D68527A8449E0095EF6A /* iMovieUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iMovieUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9F0D69227A857200095EF6A /* movieTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieTableViewCell.swift; sourceTree = "<group>"; };
+		EAB987568BE7551A4FAC532D /* Pods_iMovieTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovieTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9F0D65C27A8449B0095EF6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F0D69627A85E580095EF6A /* AlamofireImage in Frameworks */,
+				AEE5738DC4B1838F25B1F6A4 /* Pods_iMovie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67227A8449E0095EF6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7245FE892D2B9F08B3BCA7CC /* Pods_iMovieTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67C27A8449E0095EF6A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F7CBD003C5D145AB94E4E97 /* Pods_iMovie_iMovieUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC6AB897170A4BE2CC9BBDF0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A3833D4C91189CEFF4F761E /* Pods-iMovie.debug.xcconfig */,
+				2D60D0E17157E7969A9741BF /* Pods-iMovie.release.xcconfig */,
+				2C73C906B33C2246E532F109 /* Pods-iMovie-iMovieUITests.debug.xcconfig */,
+				190B2B53841485E2D2B5C1D4 /* Pods-iMovie-iMovieUITests.release.xcconfig */,
+				DD4FC157BAB52FB652A550BA /* Pods-iMovieTests.debug.xcconfig */,
+				25C86C4175A9C1628E407516 /* Pods-iMovieTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9F0D65627A8449B0095EF6A = {
+			isa = PBXGroup;
+			children = (
+				E9F0D66127A8449B0095EF6A /* iMovie */,
+				E9F0D67827A8449E0095EF6A /* iMovieTests */,
+				E9F0D68227A8449E0095EF6A /* iMovieUITests */,
+				E9F0D66027A8449B0095EF6A /* Products */,
+				DC6AB897170A4BE2CC9BBDF0 /* Pods */,
+				F54267FAA3BD0BC82A3193C3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E9F0D66027A8449B0095EF6A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9F0D65F27A8449B0095EF6A /* iMovie.app */,
+				E9F0D67527A8449E0095EF6A /* iMovieTests.xctest */,
+				E9F0D67F27A8449E0095EF6A /* iMovieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9F0D66127A8449B0095EF6A /* iMovie */ = {
+			isa = PBXGroup;
+			children = (
+				E9F0D66227A8449B0095EF6A /* AppDelegate.swift */,
+				E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */,
+				E9F0D66627A8449B0095EF6A /* ViewController.swift */,
+				E9F0D66827A8449B0095EF6A /* Main.storyboard */,
+				E9F0D69227A857200095EF6A /* movieTableViewCell.swift */,
+				E9F0D66B27A8449D0095EF6A /* Assets.xcassets */,
+				E9F0D66D27A8449D0095EF6A /* LaunchScreen.storyboard */,
+				E9F0D67027A8449D0095EF6A /* Info.plist */,
+			);
+			path = iMovie;
+			sourceTree = "<group>";
+		};
+		E9F0D67827A8449E0095EF6A /* iMovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				E9F0D67927A8449E0095EF6A /* iMovieTests.swift */,
+			);
+			path = iMovieTests;
+			sourceTree = "<group>";
+		};
+		E9F0D68227A8449E0095EF6A /* iMovieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9F0D68327A8449E0095EF6A /* iMovieUITests.swift */,
+				E9F0D68527A8449E0095EF6A /* iMovieUITestsLaunchTests.swift */,
+			);
+			path = iMovieUITests;
+			sourceTree = "<group>";
+		};
+		F54267FAA3BD0BC82A3193C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29BE130C04CCE201ECFA8AF /* Pods_iMovie.framework */,
+				8D778EBF0E377ABD06D22CF8 /* Pods_iMovie_iMovieUITests.framework */,
+				EAB987568BE7551A4FAC532D /* Pods_iMovieTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9F0D65E27A8449B0095EF6A /* iMovie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F0D68927A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovie" */;
+			buildPhases = (
+				9D2C67A0A820144233106340 /* [CP] Check Pods Manifest.lock */,
+				E9F0D65B27A8449B0095EF6A /* Sources */,
+				E9F0D65C27A8449B0095EF6A /* Frameworks */,
+				E9F0D65D27A8449B0095EF6A /* Resources */,
+				9A45F2393DDE9E49E3026F3E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iMovie;
+			packageProductDependencies = (
+				E9F0D69527A85E580095EF6A /* AlamofireImage */,
+			);
+			productName = iMovie;
+			productReference = E9F0D65F27A8449B0095EF6A /* iMovie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9F0D67427A8449E0095EF6A /* iMovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F0D68C27A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovieTests" */;
+			buildPhases = (
+				6F85A6FE816D1209D8AC6595 /* [CP] Check Pods Manifest.lock */,
+				E9F0D67127A8449E0095EF6A /* Sources */,
+				E9F0D67227A8449E0095EF6A /* Frameworks */,
+				E9F0D67327A8449E0095EF6A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9F0D67727A8449E0095EF6A /* PBXTargetDependency */,
+			);
+			name = iMovieTests;
+			productName = iMovieTests;
+			productReference = E9F0D67527A8449E0095EF6A /* iMovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9F0D67E27A8449E0095EF6A /* iMovieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9F0D68F27A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovieUITests" */;
+			buildPhases = (
+				37608A7DBB3B5F314142D360 /* [CP] Check Pods Manifest.lock */,
+				E9F0D67B27A8449E0095EF6A /* Sources */,
+				E9F0D67C27A8449E0095EF6A /* Frameworks */,
+				E9F0D67D27A8449E0095EF6A /* Resources */,
+				898C4E8EBED45236707BB76E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9F0D68127A8449E0095EF6A /* PBXTargetDependency */,
+			);
+			name = iMovieUITests;
+			productName = iMovieUITests;
+			productReference = E9F0D67F27A8449E0095EF6A /* iMovieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9F0D65727A8449B0095EF6A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					E9F0D65E27A8449B0095EF6A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					E9F0D67427A8449E0095EF6A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E9F0D65E27A8449B0095EF6A;
+					};
+					E9F0D67E27A8449E0095EF6A = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = E9F0D65E27A8449B0095EF6A;
+					};
+				};
+			};
+			buildConfigurationList = E9F0D65A27A8449B0095EF6A /* Build configuration list for PBXProject "iMovie" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9F0D65627A8449B0095EF6A;
+			packageReferences = (
+				E9F0D69427A85E570095EF6A /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = E9F0D66027A8449B0095EF6A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9F0D65E27A8449B0095EF6A /* iMovie */,
+				E9F0D67427A8449E0095EF6A /* iMovieTests */,
+				E9F0D67E27A8449E0095EF6A /* iMovieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9F0D65D27A8449B0095EF6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F0D66F27A8449D0095EF6A /* LaunchScreen.storyboard in Resources */,
+				E9F0D66C27A8449D0095EF6A /* Assets.xcassets in Resources */,
+				E9F0D66A27A8449B0095EF6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67327A8449E0095EF6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67D27A8449E0095EF6A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37608A7DBB3B5F314142D360 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMovie-iMovieUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F85A6FE816D1209D8AC6595 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMovieTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		898C4E8EBED45236707BB76E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMovie-iMovieUITests/Pods-iMovie-iMovieUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A45F2393DDE9E49E3026F3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iMovie/Pods-iMovie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D2C67A0A820144233106340 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iMovie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9F0D65B27A8449B0095EF6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F0D66727A8449B0095EF6A /* ViewController.swift in Sources */,
+				E9F0D66327A8449B0095EF6A /* AppDelegate.swift in Sources */,
+				E9F0D69327A857200095EF6A /* movieTableViewCell.swift in Sources */,
+				E9F0D66527A8449B0095EF6A /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67127A8449E0095EF6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F0D67A27A8449E0095EF6A /* iMovieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9F0D67B27A8449E0095EF6A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9F0D68427A8449E0095EF6A /* iMovieUITests.swift in Sources */,
+				E9F0D68627A8449E0095EF6A /* iMovieUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E9F0D67727A8449E0095EF6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9F0D65E27A8449B0095EF6A /* iMovie */;
+			targetProxy = E9F0D67627A8449E0095EF6A /* PBXContainerItemProxy */;
+		};
+		E9F0D68127A8449E0095EF6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9F0D65E27A8449B0095EF6A /* iMovie */;
+			targetProxy = E9F0D68027A8449E0095EF6A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9F0D66827A8449B0095EF6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9F0D66927A8449B0095EF6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E9F0D66D27A8449D0095EF6A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9F0D66E27A8449D0095EF6A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9F0D68727A8449E0095EF6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E9F0D68827A8449E0095EF6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9F0D68A27A8449E0095EF6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A3833D4C91189CEFF4F761E /* Pods-iMovie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMovie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E9F0D68B27A8449E0095EF6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D60D0E17157E7969A9741BF /* Pods-iMovie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iMovie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E9F0D68D27A8449E0095EF6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4FC157BAB52FB652A550BA /* Pods-iMovieTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMovie.app/iMovie";
+			};
+			name = Debug;
+		};
+		E9F0D68E27A8449E0095EF6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C86C4175A9C1628E407516 /* Pods-iMovieTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iMovie.app/iMovie";
+			};
+			name = Release;
+		};
+		E9F0D69027A8449E0095EF6A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C73C906B33C2246E532F109 /* Pods-iMovie-iMovieUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iMovie;
+			};
+			name = Debug;
+		};
+		E9F0D69127A8449E0095EF6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 190B2B53841485E2D2B5C1D4 /* Pods-iMovie-iMovieUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JJGM.iMovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = iMovie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9F0D65A27A8449B0095EF6A /* Build configuration list for PBXProject "iMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F0D68727A8449E0095EF6A /* Debug */,
+				E9F0D68827A8449E0095EF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F0D68927A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F0D68A27A8449E0095EF6A /* Debug */,
+				E9F0D68B27A8449E0095EF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F0D68C27A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F0D68D27A8449E0095EF6A /* Debug */,
+				E9F0D68E27A8449E0095EF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9F0D68F27A8449E0095EF6A /* Build configuration list for PBXNativeTarget "iMovieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9F0D69027A8449E0095EF6A /* Debug */,
+				E9F0D69127A8449E0095EF6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E9F0D69427A85E570095EF6A /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E9F0D69527A85E580095EF6A /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E9F0D69427A85E570095EF6A /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = E9F0D65727A8449B0095EF6A /* Project object */;
+}
