@@ -10,6 +10,9 @@
 		7245FE892D2B9F08B3BCA7CC /* Pods_iMovieTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB987568BE7551A4FAC532D /* Pods_iMovieTests.framework */; };
 		9F7CBD003C5D145AB94E4E97 /* Pods_iMovie_iMovieUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D778EBF0E377ABD06D22CF8 /* Pods_iMovie_iMovieUITests.framework */; };
 		AEE5738DC4B1838F25B1F6A4 /* Pods_iMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BE130C04CCE201ECFA8AF /* Pods_iMovie.framework */; };
+		E9CBA0DF27AB431D0089CD33 /* detailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBA0DE27AB431D0089CD33 /* detailsViewController.swift */; };
+		E9CBA0E727B351540089CD33 /* MovieGridViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBA0E627B351540089CD33 /* MovieGridViewController.swift */; };
+		E9CBA0E927B35AE50089CD33 /* MovieGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9CBA0E827B35AE50089CD33 /* MovieGridCell.swift */; };
 		E9F0D66327A8449B0095EF6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66227A8449B0095EF6A /* AppDelegate.swift */; };
 		E9F0D66527A8449B0095EF6A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */; };
 		E9F0D66727A8449B0095EF6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F0D66627A8449B0095EF6A /* ViewController.swift */; };
@@ -49,6 +52,9 @@
 		8D778EBF0E377ABD06D22CF8 /* Pods_iMovie_iMovieUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie_iMovieUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BE130C04CCE201ECFA8AF /* Pods_iMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4FC157BAB52FB652A550BA /* Pods-iMovieTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iMovieTests.debug.xcconfig"; path = "Target Support Files/Pods-iMovieTests/Pods-iMovieTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E9CBA0DE27AB431D0089CD33 /* detailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailsViewController.swift; sourceTree = "<group>"; };
+		E9CBA0E627B351540089CD33 /* MovieGridViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridViewController.swift; sourceTree = "<group>"; };
+		E9CBA0E827B35AE50089CD33 /* MovieGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieGridCell.swift; sourceTree = "<group>"; };
 		E9F0D65F27A8449B0095EF6A /* iMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9F0D66227A8449B0095EF6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -105,7 +111,6 @@
 				DD4FC157BAB52FB652A550BA /* Pods-iMovieTests.debug.xcconfig */,
 				25C86C4175A9C1628E407516 /* Pods-iMovieTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -138,10 +143,13 @@
 				E9F0D66427A8449B0095EF6A /* SceneDelegate.swift */,
 				E9F0D66627A8449B0095EF6A /* ViewController.swift */,
 				E9F0D66827A8449B0095EF6A /* Main.storyboard */,
+				E9CBA0DE27AB431D0089CD33 /* detailsViewController.swift */,
 				E9F0D69227A857200095EF6A /* movieTableViewCell.swift */,
 				E9F0D66B27A8449D0095EF6A /* Assets.xcassets */,
 				E9F0D66D27A8449D0095EF6A /* LaunchScreen.storyboard */,
 				E9F0D67027A8449D0095EF6A /* Info.plist */,
+				E9CBA0E627B351540089CD33 /* MovieGridViewController.swift */,
+				E9CBA0E827B35AE50089CD33 /* MovieGridCell.swift */,
 			);
 			path = iMovie;
 			sourceTree = "<group>";
@@ -418,10 +426,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9CBA0DF27AB431D0089CD33 /* detailsViewController.swift in Sources */,
 				E9F0D66727A8449B0095EF6A /* ViewController.swift in Sources */,
 				E9F0D66327A8449B0095EF6A /* AppDelegate.swift in Sources */,
 				E9F0D69327A857200095EF6A /* movieTableViewCell.swift in Sources */,
 				E9F0D66527A8449B0095EF6A /* SceneDelegate.swift in Sources */,
+				E9CBA0E727B351540089CD33 /* MovieGridViewController.swift in Sources */,
+				E9CBA0E927B35AE50089CD33 /* MovieGridCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

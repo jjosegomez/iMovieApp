@@ -65,5 +65,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        // this is getting the view controller ready to go to another view controller, it is used to send information from this viewcontroller to others.
+        // the sender is the the cell that the user pushes.
+        
+        print("Loading content...")
+        
+        //find selected movie
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let movie = movies[indexPath.row]
+        
+        //pass selected movie's information to the details view controller.
+        let movieDetailsViewController = segue.destination as! detailsViewController
+        movieDetailsViewController.movie = movie
+        
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 
